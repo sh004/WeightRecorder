@@ -1,0 +1,75 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity"
+    android:background="#e5c6a1">
+
+    <!--日時-->
+    <TextView
+        android:id="@+id/DateAndTime"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#FFffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:text="2015.07.23(THU) 00:00" />
+
+    <!--体重入力-->
+    <LinearLayout
+        android:id="@+id/Input"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/iWeight"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:inputType="numberDecimal"
+            android:textColor="#FFffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="35dp"
+            android:ems="10"
+            android:gravity="bottom|center" />
+
+        <TextView
+            android:id="@+id/ikg"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:textColor="#FFffffff"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="kg"
+            android:gravity="bottom|center" />
+
+    </LinearLayout>
+
+    <!--登録ボタン-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText" />
+
+    <LinearLayout
+        android:id="@+id/Enter"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom|center_horizontal">
+
+        <Button
+            android:id="@+id/eButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:textColor="#FFffffff"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:radius="50dp"
+            android:gravity="center"
+            android:text="@string/enter" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<resources>
+<!--タイトル-->
+    <string name="app_name">体重レコーダー</string>
+    <string name="title_activity_latest">体重レコーダー[最新]</string>
+    <string name="title_activity_input">体重レコーダー[入力]</string>
+    <string name="title_activity_history">体重レコーダー[履歴]</string>
+    <string name="title_activity_graph">体重レコーダー[グラフ]</string>
+    <string name="title_activity_setting">体重レコーダー[設定]</string>
+
+<!--メイン(Main)ー-->
+    <string name="main">トップ</string>
+    <string name="latest">最新</string>
+    <string name="input">入力</string>
+    <string name="history">履歴</string>
+    <string name="graph">グラフ</string>
+    <string name="setting">設定</string>
+
+<!--最新(Latest)-->
+    <string name="target">目標</string>
+    <string name="compare">前回比</string>
+    <string name="DOO">肥満度</string>
+    <string name="judge">低体重</string>      <!-- 18.5未満 -->
+    <string name="judge0">普通体重</string>      <!-- 18.5～24 -->
+    <string name="judge1">肥満(1度)</string>    <!-- 25～29 -->
+    <string name="judge2">肥満(2度)</string>    <!-- 30～34 -->
+    <string name="judge3">肥満(3度)</string>    <!-- 35～39 -->
+    <string name="judge4">肥満(4度)</string>    <!-- 40～ -->
+
+
+<!--入力(Input)-->
+    <string name="enter">登録</string>
+
+<!--履歴(History)-->
+    <string name="date">日付</string>
+    <string name="time">時間</string>
+    <string name="weight">体重</string>
+    <!-- 目標 -->
+
+    <!--グラフ(Graph)-->
+
+    <!--設定(Setting)-->
+    <string name="height">身長</string>
+    <string name="target_weight">目標体重</string>
+    <!-- 肥満度 登録 -->
+    <string name="reset">初期化</string>
+</resources>

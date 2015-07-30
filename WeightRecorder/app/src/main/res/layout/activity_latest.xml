@@ -1,0 +1,207 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LatestActivity"
+    android:background="#ffffe0"
+    android:id="@+id/Latest"
+    android:longClickable="false">
+
+    <!--日時-->
+    <TextView
+        android:id="@+id/DateAndTime"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#FFadadad"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:layout_columnSpan="3"
+        android:text="2015.05.14(THU) 15:39" />
+
+    <!--最新体重-->
+    <TableLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:id="@+id/latestWeight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:layout_columnSpan="2"
+                android:text="00.0"
+                android:paddingLeft="50dp" />
+
+            <TextView
+                android:id="@+id/lkg"
+                android:layout_width="50dp"
+                android:layout_height="100dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:layout_columnSpan="1"
+                android:text="kg" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!--目標体重,前回比-->
+    <TableLayout
+        android:id="@+id/tc"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="0,1">
+
+        <!--目標体重-->
+        <TableRow
+            android:id="@+id/targrtWeight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/Target"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="left|center"
+                android:paddingLeft="30dp"
+                android:text="@string/target" />
+
+            <TextView
+                android:id="@+id/tWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center|right"
+                android:paddingRight="20dp"
+                android:text="+00.0" />
+
+            <TextView
+                android:id="@+id/tkg"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="kg" />
+
+        </TableRow>
+
+        <!--前回比-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/compareWeight">
+
+            <TextView
+                android:id="@+id/Compare"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="left|center"
+                android:paddingLeft="30dp"
+                android:text="@string/compare" />
+
+            <TextView
+                android:id="@+id/cWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center|right"
+                android:paddingRight="20dp"
+                android:text="+00.0" />
+
+            <TextView
+                android:id="@+id/ckg"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center"
+                android:text="kg" />
+        </TableRow>
+
+    </TableLayout>
+
+    <!--BIM,肥満度-->
+    <TableLayout
+        android:id="@+id/bd"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="0,1">
+
+        <!--BIM-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/bmi">
+
+            <TextView
+                android:id="@+id/BMI"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="left|center"
+                android:paddingLeft="30dp"
+                android:text="BMI" />
+
+            <TextView
+                android:id="@+id/BMInum"
+                android:layout_width="210dp"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center|right"
+                android:paddingRight="70dp"
+                android:text="00" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/doo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/DOO"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="left|center"
+                android:paddingLeft="30dp"
+                android:text="@string/DOO" />
+
+            <TextView
+                android:id="@+id/DOOjudge"
+                android:layout_width="210dp"
+                android:layout_height="70dp"
+                android:textColor="#FFadadad"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center|right"
+                android:paddingRight="70dp"
+                android:text="@string/judge0" />
+        </TableRow>
+        <!--肥満度-->
+    </TableLayout>
+0
+</LinearLayout>
