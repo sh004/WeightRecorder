@@ -29,10 +29,13 @@ public class SettingActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 //身長・目標体重の入力状態を判定
-                String num1, num2;
-                num1 = height.getText().toString();
-                num2 = targetWeight.getText().toString();
-                if (num1.equals("") && num2.equals("")) {
+                String str1, str2;
+                int num1, num2;
+                str1 = height.getText().toString();
+                str2 = targetWeight.getText().toString();
+                num1 = Integer.parseInt(str1);
+                num2 = Integer.parseInt(str2);
+                if (str1.equals("") && str2.equals("")) {
                     //ボタンは反応しない
                 } else {
                     //登録内容の更新処理
