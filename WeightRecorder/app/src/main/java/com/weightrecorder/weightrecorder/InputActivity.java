@@ -50,10 +50,10 @@ public class InputActivity extends ActionBarActivity  {
         });
     }
 
+    //現在の日時を取得
     public static String getDateAndTime() {
         String date, time;
 
-        //現在の日時を取得
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);                                  //西暦
         int month = cal.get(Calendar.MONTH) + 1;                            //月
@@ -63,9 +63,8 @@ public class InputActivity extends ActionBarActivity  {
         int hour = cal.get(Calendar.HOUR_OF_DAY);                           //時
         int minute = cal.get(Calendar.MINUTE);                              //分
 
-        date = String.format("%1$04d.%2$02d.%3$02d", year, month, day) +  "(" + week[weekNum] + ")";
+        date = String.format("%1$04d.%2$02d.%3$02d", year, month, day) + "(" + week[weekNum] + ")";
         time =  String.format("%1$02d:%2$02d", hour, minute);
-        //time = hour + ":" + minute;
 
         return date + " " + time;
     }
