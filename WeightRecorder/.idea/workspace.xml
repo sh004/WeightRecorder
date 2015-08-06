@@ -43,6 +43,9 @@
       </layout>
     </layouts>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.weightrecorder.weightrecorder" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ad504a25-0f25-4a17-89ab-65062a5ca07d" name="Default" comment="" />
     <ignored path="WeightRecorder.iws" />
@@ -86,24 +89,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_input.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="activity_input.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_input.xml">
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="1360">
-              <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2773893" vertical-offset="0" max-vertical-offset="1360">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="InputActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/weightrecorder/weightrecorder/InputActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4074074" vertical-offset="476" max-vertical-offset="1496">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="745" max-vertical-offset="1496">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -884,9 +887,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_historydetail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_input.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/weightrecorder/weightrecorder/SettingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/weightrecorder/weightrecorder/InputActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_input.xml" />
       </list>
     </option>
   </component>
@@ -923,6 +926,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
@@ -1030,7 +1034,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1042,7 +1045,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_21_x86" />
   </component>
   <component name="RecentsManager">
@@ -1707,21 +1710,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_input.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="1360">
-          <caret line="52" column="44" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/weightrecorder/weightrecorder/InputActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="745" max-vertical-offset="1496">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/weightrecorder/weightrecorder/InputActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_input.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4074074" vertical-offset="476" max-vertical-offset="1496">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2773893" vertical-offset="0" max-vertical-offset="1360">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
         </state>
       </provider>
