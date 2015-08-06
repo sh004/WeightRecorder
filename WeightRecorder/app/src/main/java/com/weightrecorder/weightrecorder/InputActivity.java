@@ -9,12 +9,14 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.content.Intent;
+import android.content.DialogInterface;
+import android.app.AlertDialog;
 import java.util.Calendar;
 
 
 public class InputActivity extends ActionBarActivity  {
 
-    private TextView dateAndTime;   //現在の日時
+    private TextView dateAndTime;   //現在日時
     private EditText weight;        //体重
     private Button buttonEnter;     //登録ボタン
 
@@ -27,33 +29,40 @@ public class InputActivity extends ActionBarActivity  {
         weight = (EditText) findViewById(R.id.iWeight);
         buttonEnter = (Button) findViewById(R.id.eButton);
 
+        //現在日時を反映
         dateAndTime.setText(getDateAndTime());
 
         //登録ボタン押下
         buttonEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //体重の入力状態を判定
-                String str = weight.getText().toString();
-                int num = Integer.parseInt(str);
-                if (str.equals("")) {
-                    //ボタンは反応しない
-                } else {
-                    //入力内容を「履歴」に反映
+            //入力内容を取得
+            double num = Double.parseDouble(weight.getText().toString());
 
-                    //「最新」へ移動
-                    Intent intent = new Intent(InputActivity.this, LatestActivity.class);
-                    startActivity(intent);
-                }
+            //入力状態を判定
+            if (num > 0) {
+                //入力内容を「履歴」に反映
 
+                //「最新」へ移動
+                Intent intent = new Intent(InputActivity.this, LatestActivity.class);
+                startActivity(intent);
+            } else {
+                //ダイアログの表示
+                AlertDialog.Builder alert = new AlertDialog.Builder(InputActivity.this);  //確認ダイアログ
+                alert.setMessage("体重を入力してください。");
+                alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) { }
+                });
+                alert.create().show();
+            }
             }
         });
     }
 
+    //現在日時を取得
     public static String getDateAndTime() {
         String date, time;
 
-        //現在の日時を取得
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);                                  //西暦
         int month = cal.get(Calendar.MONTH) + 1;                            //月
@@ -63,9 +72,8 @@ public class InputActivity extends ActionBarActivity  {
         int hour = cal.get(Calendar.HOUR_OF_DAY);                           //時
         int minute = cal.get(Calendar.MINUTE);                              //分
 
-        date = String.format("%1$04d.%2$02d.%3$02d", year, month, day) +  "(" + week[weekNum] + ")";
+        date = String.format("%1$04d.%2$02d.%3$02d", year, month, day) + "(" + week[weekNum] + ")";
         time =  String.format("%1$02d:%2$02d", hour, minute);
-        //time = hour + ":" + minute;
 
         return date + " " + time;
     }
