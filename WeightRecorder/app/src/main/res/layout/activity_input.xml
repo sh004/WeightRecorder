@@ -15,7 +15,7 @@
         android:textColor="#FFffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:gravity="center"
-        android:text="2015.07.23(THU) 00:00" />
+        android:text="0000.00.00(SUN) 00:00" />
 
     <!--体重入力-->
     <LinearLayout
