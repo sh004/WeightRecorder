@@ -46,10 +46,18 @@ public class InputActivity extends ActionBarActivity  {
                 //「最新」へ移動
                 Intent intent = new Intent(InputActivity.this, LatestActivity.class);
                 startActivity(intent);
-            } else {
+            } else if (weight == null | weight.length() == 0) {
                 //ダイアログの表示
                 AlertDialog.Builder alert = new AlertDialog.Builder(InputActivity.this);  //確認ダイアログ
                 alert.setMessage("体重を入力してください。");
+                alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) { }
+                });
+                alert.create().show();
+            } else {
+                //ダイアログの表示
+                AlertDialog.Builder alert = new AlertDialog.Builder(InputActivity.this);  //確認ダイアログ
+                alert.setMessage("正しくしてください。");
                 alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) { }
                 });
