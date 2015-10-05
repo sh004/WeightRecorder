@@ -19,8 +19,8 @@
     <string name="target">目標</string>
     <string name="compare">前回比</string>
     <string name="DOO">肥満度</string>
-    <string name="judge">低体重</string>      <!-- 18.5未満 -->
-    <string name="judge0">普通体重</string>      <!-- 18.5～24 -->
+    <string name="judge">低体重</string>        <!-- 18.5未満 -->
+    <string name="judge0">普通体重</string>     <!-- 18.5～24 -->
     <string name="judge1">肥満(1度)</string>    <!-- 25～29 -->
     <string name="judge2">肥満(2度)</string>    <!-- 30～34 -->
     <string name="judge3">肥満(3度)</string>    <!-- 35～39 -->
@@ -34,13 +34,11 @@
     <string name="date">日付</string>
     <string name="time">時間</string>
     <string name="weight">体重</string>
-    <!-- 目標 -->
 
-    <!--グラフ(Graph)-->
+<!--グラフ(Graph)-->
 
-    <!--設定(Setting)-->
+<!--設定(Setting)-->
     <string name="height">身長</string>
     <string name="target_weight">目標体重</string>
-    <!-- 肥満度 登録 -->
     <string name="reset">初期化</string>
 </resources>
