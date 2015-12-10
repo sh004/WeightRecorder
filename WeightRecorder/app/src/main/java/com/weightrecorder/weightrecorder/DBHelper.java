@@ -8,20 +8,22 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DBHelper extends SQLiteOpenHelper {
 
     //データベース
-    private static final String DATABASE_NAME = "WeightRecorder";    //体重レコーダー
-    private static final int DATABASE_VERSION = 1;                 //バージョン
+    private static final String DATABASE_NAME = "WeightRecorder";   //体重レコーダー
+    private static final int DATABASE_VERSION = 1;                  //バージョン
     //テーブル1：基本設定
     public static final String TABLE1 = "BasicSetting";
-    public static final String USER = "user";                      //検索用
-    public static final String HEIGHT = "height";                  //身長
-    public static final String TARGET_WEIGHT = "target_weight";    //目標体重
-    public static final String ME = "me";
+    public static final String TABLE1_ID = "BasicSetting_id";       //通し番号
+    public static final String HEIGHT = "height";                   //身長
+    public static final String TARGET_WEIGHT = "target_weight";     //目標体重
     //テーブル2：記録
-    public static final String TABLE2 = "Record";
-    public static final String DATE = "date";                      //入力日
-    public static final String TIME = "time";                      //入力時間
-    public static final String WEIGHT = "weight";                  //体重
-    public static final String COMPARE_TARGET= "compare_target";   //目標±
+    public static final String TABLE2 = "Records";
+    public static final String TABLE2_ID = "Records_id";            //通し番号
+    public static final String BSID = "BSid";                       //基本設定の通し番号
+    public static final String YEAR_DATE = "year_date";             //西暦,月日
+    public static final String DATE = "date";                       //月日
+    public static final String WEEK = "week";                       //曜日
+    public static final String TIME = "time";                       //時間
+    public static final String WEIGHT = "weight";                   //体重
 
 
     public DBHelper(Context context) {
@@ -33,27 +35,26 @@ public class DBHelper extends SQLiteOpenHelper {
         //テーブル1：基本設定を作成
         db.execSQL(
                 "CREATE TABLE " + TABLE1 + " ("
-                + USER + " STRING, "
+                + TABLE1_ID + " INTEGER PRIMARY KEY, "
                 + HEIGHT + " DOUBLE, "
                 + TARGET_WEIGHT + " DOUBLE);"
-        );
-        db.execSQL(
-                "INSERT INTO " + TABLE1 + " (" + USER + ", " + HEIGHT + ", " + TARGET_WEIGHT + ") "
-                + "VALUES ('" + ME + "', 0, 0);"
         );
 
         //テーブル2：記録を作成
         db.execSQL("CREATE TABLE " + TABLE2 + " ("
+                + TABLE2_ID + " INTEGER PRIMARY KEY, "
+                + BSID + " INTEGER, "
+                + YEAR_DATE + " STRING, "
                 + DATE + " STRING, "
+                + WEEK + " STRING, "
                 + TIME + " STRING, "
-                + WEIGHT + " DOUBLE, "
-                + COMPARE_TARGET + "DOUBLE);"
+                + WEIGHT + " DOUBLE);"
         );
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // データベースの変更が生じた場合は、ここに処理を記述する。
+        //DBのアップグレード
     }
 
 }

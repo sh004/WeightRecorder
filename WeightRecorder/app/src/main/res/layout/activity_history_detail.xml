@@ -199,9 +199,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center|right"
                 android:paddingRight="70dp"
-                android:text="@string/judge0" />
+                android:text="" />
         </TableRow>
         <!--肥満度-->
     </TableLayout>
-    0
 </LinearLayout>
