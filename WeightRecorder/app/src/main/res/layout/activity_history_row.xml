@@ -3,65 +3,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="50dp"
     tools:context=".HistoryActivity"
     android:background="#f8a8a8"
-    android:id="@+id/History"
     android:longClickable="false">
 
     <TableLayout
-        android:id="@+id/Item"
+        android:id="@+id/data"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:stretchColumns="0,1,2,3">
 
         <TableRow
+            android:id="@+id/row"
             android:layout_width="match_parent"
             android:layout_height="40dp">
 
             <TextView
-                android:id="@+id/Date"
+                android:id="@+id/date"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:textColor="#FFffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center"
-                android:text="@string/date" />
+                android:text="00.00" />
 
             <TextView
-                android:id="@+id/Time"
+                android:id="@+id/time"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:textColor="#FFffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center"
-                android:text="@string/time" />
+                android:text="00:00" />
 
             <TextView
-                android:id="@+id/Weight"
+                android:id="@+id/weight"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:textColor="#FFffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center"
-                android:text="@string/weight" />
+                android:text="00.0" />
 
             <TextView
-                android:id="@+id/Target"
+                android:id="@+id/target"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:textColor="#FFffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center"
-                android:text="@string/target" />
+                android:text="±00.0" />
 
         </TableRow>
 
     </TableLayout>
 
-    <ListView
-        android:id="@+id/listview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal" />
 </LinearLayout>

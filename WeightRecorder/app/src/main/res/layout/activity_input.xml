@@ -48,16 +48,12 @@
     </LinearLayout>
 
     <!--登録ボタン-->
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText" />
 
     <LinearLayout
         android:id="@+id/Enter"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="130dp"
         android:gravity="bottom|center_horizontal">
 
         <Button
@@ -65,7 +61,6 @@
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:textColor="#FFffffff"
-
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:radius="50dp"
             android:gravity="center"
