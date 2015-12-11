@@ -23,6 +23,13 @@
         <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-3221e4cc634c5a9ee1f3efa40a8157bec1087a0e.jar" />
     </item>
     <item
+        jar="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\exploded-aar\WeightRecorder\HoloGraphLibrary\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b260698d6cfccbceaa9f5f0978c050f2aa32fe6e">
+        <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\classes-6faeff6086351de5e3107a96e1d4b256f333459f.jar" />
+    </item>
+    <item
         jar="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"

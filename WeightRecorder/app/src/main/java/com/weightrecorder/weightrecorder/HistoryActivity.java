@@ -6,7 +6,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
-import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import java.util.ArrayList;
