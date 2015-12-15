@@ -6,9 +6,4 @@
     tools:context=".GraphsActivity"
     android:background="#ff6767">
 
-    <com.echo.holographlibrary.LineGraph
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:id="@+id/graph"/>
-
 </LinearLayout>
