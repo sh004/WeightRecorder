@@ -1,0 +1,172 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:longClickable="false">
+
+    <!--最新-->
+    <LinearLayout
+        android:id="@+id/Latest"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="#ffffe0"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:focusableInTouchMode="false"
+        android:onClick="onClick"
+        tools:context=".LatestActivity"
+        android:longClickable="false">
+
+        <!--日時-->
+        <TextView
+            android:id="@+id/DateAndTime"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#FFadadad"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="center"
+            android:layout_columnSpan="3"
+            android:text="0000.00.00(SUN) 00:00" />
+
+        <!--最新体重-->
+        <TableLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:stretchColumns="0">
+
+            <TableRow
+                android:id="@+id/latestWeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:textColor="#FFadadad"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center"
+                    android:textSize="35dp"
+                    android:layout_columnSpan="2"
+                    android:text="00.0"
+                    android:paddingLeft="50dp" />
+
+                <TextView
+                    android:id="@+id/lkg"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:textColor="#FFadadad"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center"
+                    android:layout_columnSpan="1"
+                    android:text="kg" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!--目標体重-->
+        <TableLayout
+            android:id="@+id/t"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:stretchColumns="0,1">
+
+            <TableRow
+                android:id="@+id/compareTargrt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Target"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:textColor="#FFadadad"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="left|center"
+                    android:paddingLeft="30dp"
+                    android:text="@string/target" />
+
+                <TextView
+                    android:id="@+id/cTarget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:textColor="#FFadadad"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center|right"
+                    android:paddingRight="20dp"
+                    android:text="00.0" />
+
+                <TextView
+                    android:id="@+id/ckg"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:textColor="#FFadadad"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="center"
+                    android:text="kg" />
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <!--入力-->
+    <TextView
+        android:id="@+id/Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:background="#e5c6a1"
+        android:textColor="#FFffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:text="@string/input"
+        android:onClick="onClick" />
+
+    <!--履歴-->
+    <TextView
+        android:id="@+id/History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:background="#f8a8a8"
+        android:textColor="#FFffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:text="@string/history"
+        android:onClick="onClick"/>
+
+    <!--グラフ-->
+    <TextView
+        android:id="@+id/Graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:background="#ff6767"
+        android:textColor="#FFffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:text="@string/graph"
+        android:onClick="onClick" />
+
+    <!--設定-->
+    <TextView
+        android:id="@+id/Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:background="#abbbb8"
+        android:textColor="#FFffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:text="@string/setting"
+        android:onClick="onClick" />
+
+</LinearLayout>
