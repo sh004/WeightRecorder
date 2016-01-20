@@ -2,13 +2,6 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\1403020\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-572d6e26232ad2682ed6ad0109cf815edae4b004.jar" />
-    </item>
-    <item
         jar="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
@@ -16,18 +9,32 @@
         <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\classes-3765e440f7dde55f8a4e78e8b84d99c91bf42199.jar" />
     </item>
     <item
-        jar="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jar="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\exploded-aar\WeightRecorder\hellocharts-library\unspecified\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-3221e4cc634c5a9ee1f3efa40a8157bec1087a0e.jar" />
+        sha1="f296323691292bfb97568b27790a788672ad4782">
+        <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\classes-68893d653eff26f77241157a205193f205dafe94.jar" />
     </item>
     <item
-        jar="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jar="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\classes-b0e932aa68c45366721c9a735e55e3e59b144dee.jar" />
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\classes-ae0291d7b379b2e50a35ccfaa136cec90b29a03a.jar" />
+    </item>
+    <item
+        jar="C:\Users\1403020\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-410731b675d94e8f51bf5aab91e89eef01752cac.jar" />
+    </item>
+    <item
+        jar="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\1403020\Documents\GraduationProduction\WeightRecorder\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-26bb9dd8312cf4d350c55f6786146058924e26f8.jar" />
     </item>
 
 </items>

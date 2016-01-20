@@ -10,47 +10,46 @@
     android:longClickable="false">
 
     <TableLayout
-        android:id="@+id/hItem"
+        android:id="@+id/Item"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="40dp"
         android:stretchColumns="0,1,2,3">
 
         <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
 
             <TextView
-                android:id="@+id/iDate"
+                android:id="@+id/Date"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:textColor="#FFffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center"
                 android:text="@string/date" />
 
             <TextView
-                android:id="@+id/iTime"
+                android:id="@+id/Time"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:textColor="#FFffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center"
                 android:text="@string/time" />
 
             <TextView
-                android:id="@+id/iWeight"
+                android:id="@+id/Weight"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:textColor="#FFffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center"
                 android:text="@string/weight" />
 
             <TextView
-                android:id="@+id/iTarget"
+                android:id="@+id/Target"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:textColor="#FFffffff"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center"
@@ -60,71 +59,9 @@
 
     </TableLayout>
 
-    <TableLayout
-        android:id="@+id/hData"
+    <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:stretchColumns="0,1,2,4">
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFffffff"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:gravity="center"
-                android:text="07.23" />
-
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFffffff"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:gravity="center"
-                android:text="00:00" />
-
-            <TextView
-                android:id="@+id/weight"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFffffff"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:gravity="center"
-                android:text="00.0" />
-
-            <TextView
-                android:id="@+id/wkg"
-                android:layout_width="25dp"
-                android:layout_height="wrap_content"
-                android:textColor="#FFffffff"
-                android:gravity="left"
-                android:text="kg" />
-
-            <TextView
-                android:id="@+id/target"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#FFffffff"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:gravity="center"
-                android:text="+0" />
-
-            <TextView
-                android:id="@+id/tkg"
-                android:layout_width="25dp"
-                android:layout_height="wrap_content"
-                android:textColor="#FFffffff"
-                android:gravity="left"
-                android:text="kg" />
-
-        </TableRow>
-
-    </TableLayout>
-
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal" />
 </LinearLayout>

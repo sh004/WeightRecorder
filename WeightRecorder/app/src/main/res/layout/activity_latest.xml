@@ -18,7 +18,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:gravity="center"
         android:layout_columnSpan="3"
-        android:text="2015.05.14(THU) 15:39" />
+        android:text="0000.00.00(SUN) 00:00" />
 
     <!--最新体重-->
     <TableLayout
@@ -68,7 +68,7 @@
 
         <!--目標体重-->
         <TableRow
-            android:id="@+id/targrtWeight"
+            android:id="@+id/compareTargrt"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -83,17 +83,17 @@
                 android:text="@string/target" />
 
             <TextView
-                android:id="@+id/tWeight"
+                android:id="@+id/cTarget"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:textColor="#FFadadad"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center|right"
                 android:paddingRight="20dp"
-                android:text="+00.0" />
+                android:text="±00.0" />
 
             <TextView
-                android:id="@+id/tkg"
+                android:id="@+id/ckg"
                 android:layout_width="50dp"
                 android:layout_height="70dp"
                 android:textColor="#FFadadad"
@@ -107,10 +107,10 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/compareWeight">
+            android:id="@+id/previousWeight">
 
             <TextView
-                android:id="@+id/Compare"
+                android:id="@+id/Previous"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:textColor="#FFadadad"
@@ -120,17 +120,17 @@
                 android:text="@string/compare" />
 
             <TextView
-                android:id="@+id/cWeight"
+                android:id="@+id/pWeight"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:textColor="#FFadadad"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center|right"
                 android:paddingRight="20dp"
-                android:text="+00.0" />
+                android:text="±00.0" />
 
             <TextView
-                android:id="@+id/ckg"
+                android:id="@+id/pkg"
                 android:layout_width="50dp"
                 android:layout_height="70dp"
                 android:textColor="#FFadadad"
@@ -199,9 +199,9 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="center|right"
                 android:paddingRight="70dp"
-                android:text="@string/judge0" />
+                android:text="" />
         </TableRow>
         <!--肥満度-->
     </TableLayout>
-0
+    0
 </LinearLayout>
